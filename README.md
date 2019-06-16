@@ -45,4 +45,15 @@ The output file containing the acquired traces is stored in "traces/" folder in 
 The average trace can be inspected using the "plot_average.py" script.
 Make sure that the "demodulation" and "filename" parameters are correctly set.
 
-### Analyses and attacks
+### Off-line CPA attack
+
+This attack only requires that an "attack" set of traces has been taken.
+It is done by executing the "attack_cpa.py" script.
+
+First make sure that the following parameters are correctly set:
+1. _n_attack_traces_: the number of traces used for the attack.
+It must be lower or equal to the number of traces held in the file.
+2. _demodulation_: determines whether an amplitude demodulation must be applied or not (only useful for the Arduino Uno).
+3. _filename_: the name of the file in which the attack traces are held.
+
+### On-line CPA attack
