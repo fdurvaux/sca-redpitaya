@@ -42,6 +42,7 @@ The latter is necessary for the training phase (see the following).
 
 The output file containing the acquired traces is stored in "traces/" folder in the ".mat" format (e.g. _profiling_set_nt_10000_A.mat_).
 
-
+The average trace can be inspected using the "plot_average.py" script.
+Make sure that the "demodulation" and "filename" parameters are correctly set.
 
 ### Analyses and attacks
