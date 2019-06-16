@@ -10,3 +10,20 @@ The repo is organised with the following folders
 3. _lib_ contains the libraries necessary for interfacing with the Red Pitaya platform as well as functions used in the side-channel analyses.
 4. _targets_ holds the demonstration code adapted for the Arduino Uno and Arduino Due platforms.
 5. _traces_ is the folder where all the traces and intermediate data are stored.
+
+## Step-by-step walkthrough
+
+### Setup preparation
+
+1. Power up the Red Pitaya, identify its IP address, and turn on the SCPI server.
+2. Connect the Arduino Uno/Due to the host computer, and identify the serial port it is connected to.
+3. Place the EM probe next to a power supply pin of the target.
+4. Connect the pre-amplifier output to the the fast analog input 1.
+5. Connect a scope probe to the digital I/O 13 of the Arduino board (the ground must be connected too).
+On the scope side, the probe should be connected on the fast analog input 2.
+
+### Trace acquisition
+
+
+
+### Analyses and attacks
