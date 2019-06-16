@@ -23,6 +23,9 @@ The repo is organised with the following folders
 On the scope side, the probe should be connected on the fast analog input 2.
 This signal is used for triggering the acquisition.
 
+__Note:__ The key held in the Arduino Uno can be configured (i.e. the one recovered with the attack).
+For this purpose, use the "set_key.py" script that is located in the "targets" folder.
+
 ### Trace acquisition
 
 Traces are recorded with the script called "capture_traces.py" in the "analysis" folder.
@@ -57,3 +60,5 @@ It must be lower or equal to the number of traces held in the file.
 3. _filename_: the name of the file in which the attack traces are held.
 
 ### On-line CPA attack
+
+
