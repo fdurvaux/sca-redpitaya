@@ -61,4 +61,13 @@ It must be lower or equal to the number of traces held in the file.
 
 ### On-line CPA attack
 
+This attack requires that a "profiling" set of traces has been taken.
+This set is further used during a _training phase_ which is performed by executing the following scripts:
+1. "identify_pois.py": this script is used to determine the time samples that hold useful information for the attack.
+First, make sure that the "demodulation" (only useful for the Arduino Uno) and "filename" parameters are correctly set.
+The points-of-interest are stored in a file "POIs.mat" in the "traces/" folder. 
+2. "extract_best_cpa_points.py": this script is used to find a liner projection of the POIs held in "traces/POIs.mat" in order to maximise the efficiency of a CPA attack. First, make sure that the "demodulation" (only useful for the Arduino Uno) and "filename" (of the profiling set) parameters are correctly set.
+The projection profiles are stored in "traces/PP_CPA.mat".
+
+Once the two previous scripts have been executed, the on-line attack is possible.
 

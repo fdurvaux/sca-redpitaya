@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import scipy.io as sio
 from scipy import signal
-sys.path.insert(0,'../../scalib/')
+sys.path.insert(0,'../lib/')
 import scalib as sca
 
 n_attack_traces = 250
