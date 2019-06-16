@@ -2,6 +2,9 @@
 
 The purpose of this project is to demonstrate how state-of-the-art side-channel attacks exploiting power leakages can be conducted on platforms representative of IoT devices.
 
+Find below a short description on how to use the scripts in order to reproduce the demo made during the hack.lu 2018 and FIRST 2019 conferences.
+For more extensive details on the scripts, do not hesitate to contact me.
+
 ## Repository organisation
 
 The repo is organised with the following folders
