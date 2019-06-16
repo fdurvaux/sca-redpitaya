@@ -21,8 +21,26 @@ The repo is organised with the following folders
 4. Connect the pre-amplifier output to the the fast analog input 1.
 5. Connect a scope probe to the digital I/O 13 of the Arduino board (the ground must be connected too).
 On the scope side, the probe should be connected on the fast analog input 2.
+This signal is used for triggering the acquisition.
 
 ### Trace acquisition
+
+Traces are recorded with the script called "capture_traces.py" in the "analysis" folder.
+
+Before starting the acquisition, make sure the the following parameters are correctly set in the script:
+1. On-the-fly plotting of the traces with the "plotting" parameter.
+2. The Red Pitaya IP address.
+3. The serial port on the Arduino target.
+
+The acquisition is then started by executing the script with the following arguments:
+1. _set_type_: "attack" or "profiling".
+In the "attack" case, random plaintexts are sent to the target, the key is unknown.
+In the "profiling" case, random plaintexts and random keys are sent to the target.
+The latter is necessary for the training phase (see the following).
+2. _n_traces_: number of traces to be acquired (integer value)
+3. _ext_ (optional): extension to be added on the output file.
+
+The output file containing the acquired traces is stored in "traces/" folder in the ".mat" format (e.g. _profiling_set_nt_10000_A.mat_).
 
 
 
